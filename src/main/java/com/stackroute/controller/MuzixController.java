@@ -8,8 +8,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("api")
 public class MuzixController {
@@ -53,10 +51,6 @@ public class MuzixController {
         return new ResponseEntity<>(muzixService.updateTrack(muzix,muzix.getTrackId()), HttpStatus.OK);
 
     }
-    @GetMapping("trackByName")
-    public ResponseEntity<?> getTrackByName(@RequestParam String name) throws TrackNotFoundException
-    {
-        return new ResponseEntity<List<Muzix>>(muzixService.getTracksByName(name), HttpStatus.OK);
-    }
+
 
 }

@@ -11,6 +11,6 @@ public interface MuzixService { //interface with method declarations
     List<Muzix> deleteTrack(int trackId);
     Muzix updateTrack(Muzix muzix,int id) throws TrackNotFoundException;
      void getList();
-    public List<Muzix> getTracksByName(String name);
+
 
 }

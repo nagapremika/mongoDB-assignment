@@ -91,9 +91,4 @@ public void getList() {
     }
 }
 
-    public List<Muzix> getTracksByName(String name) {
-
-        return muzixRepository.getTrackByName(name);
-
-    }
 }
